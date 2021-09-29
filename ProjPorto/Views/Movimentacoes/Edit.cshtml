@@ -1,0 +1,49 @@
+﻿@model ProjPorto.Models.Movimentacao
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Movimentacao</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="TipoMovimentacao" class="control-label"></label>
+                <select asp-for="TipoMovimentacao" class="form-control" asp-items="Html.GetEnumSelectList<TipoMovimentacao>()"></select>
+                <span asp-validation-for="TipoMovimentacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Inicio" class="control-label"></label>
+                <input asp-for="Inicio" class="form-control" />
+                <span asp-validation-for="Inicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fim" class="control-label"></label>
+                <input asp-for="Fim" class="form-control" />
+                <span asp-validation-for="Fim" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConteinerId" class="control-label"></label>
+                <select asp-for="ConteinerId" class="form-control" asp-items="ViewBag.ConteinerId"></select>
+                <span asp-validation-for="ConteinerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
