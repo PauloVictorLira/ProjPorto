@@ -33,5 +33,5 @@ exportação.
 
 **Update**:
 
-![image](https://user-images.githubusercontent.com/49046915/135258799-889ba98a-d08e-4aa6-891c-3bc431de7bef.png)
-![image](https://user-images.githubusercontent.com/49046915/135258921-c5b4f3d9-7cd8-4c81-b35e-b979562f15b2.png)
+![image](https://user-images.githubusercontent.com/49046915/135259561-98bbe7a7-d8bb-4d2a-82ce-9b91e022d20b.png)
+![image](https://user-images.githubusercontent.com/49046915/135259396-bd9b9fd5-ea85-40a2-b909-e3d356ecc766.png)
